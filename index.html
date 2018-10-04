@@ -1,37 +1,387 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/miffy224/sss/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+<html lang="en" >
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<head>
 
-### Markdown
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" />
+  <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" />
+  <title>CodePen - SSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css'>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+      <style>
+      @charset "UTF-8";
+* {
+  font-family: 微軟正黑體, STsong;
+  font-weight: bold;
+}
 
-```markdown
-Syntax highlighted code block
+body {
+  height: 1000px;
+}
 
-# Header 1
-## Header 2
-### Header 3
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: bold;
+}
 
-- Bulleted
-- List
+nav.navbar {
+  padding: 10px;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+nav.navbar p {
+  font-size: 10px;
+}
+nav.navbar img {
+  margin-left: 30px;
+  height: 20px;
+}
+nav.navbar a {
+  cursor: pointer;
+}
 
-1. Numbered
-2. List
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top {
+  background-color: transparent;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a {
+  color: white;
+  transition: 0.5s;
+}
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top a:hover {
+  color: #E49A2D;
+}
 
-**Bold** and _Italic_ and `Code` text
+header.jumbotron {
+  text-align: center;
+  background-image: url(https://www.printcolor.com.tw/wp-content/uploads/2009/02/e78e8be5beb7e582b3e79498e7949ce69aa2e5bfabe586b7e6b3a1e88cb6e585a7e9a081e789b9e5afab-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+header.jumbotron .container {
+  color: white;
+  padding: 200px 0px;
+}
+header.jumbotron hr {
+  max-width: 60px;
+  border: solid 2px #E49A2D;
+}
+header.jumbotron h4 {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+}
 
-[Link](url) and ![Image](src)
-```
+section {
+  padding: 0px 0px;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+section#section_intro {
+  text-align: center;
+  background-color: #E49A2D;
+  padding: 20px;
+}
+section#section_intro .col-md-6 {
+  padding: 10px;
+}
+section#section_intro .icon-sea {
+  width: 80px;
+  margin: 30px;
+}
 
-### Jekyll Themes
+section#section_story img {
+  width: 100%;
+}
+section#section_story .img_wrap {
+  height: 220px;
+  overflow: hidden;
+}
+section#section_story .feature {
+  margin-top: 30px;
+  padding-bottom: 0px;
+}
+section#section_story .feature button {
+  text-align: center;
+  position: absolute;
+  right: 150px;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/miffy224/sss/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+section#section_course {
+  color: white;
+  text-align: center;
+  padding: 0px 0px;
+}
+section#section_course h1 {
+  font-size: 100px;
+}
+section#section_course p {
+  font-size: 20px;
+}
+section#section_course .col-md-6 {
+  padding: 150px;
+  cursor: pointer;
+}
+section#section_course .col-md-6:hover p {
+  opacity: 0.7;
+}
+section#section_course .col-md-6:hover:before {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  background-size: auto 120%;
+}
+section#section_course .col-md-6:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition-duration: 0.5s;
+  background-position: center center;
+}
+section#section_course .pic1:before {
+  background-image: url(https://i.pinimg.com/originals/14/be/79/14be79c78f675a0775af65427b9d6376.jpg);
+  background-size: auto 110%;
+}
+section#section_course .pic2:before {
+  background-image: url(http://robertjrgraham.com/wp-content/uploads/2013/02/enjoying-life-iheartfaces-wm.jpg);
+  background-size: auto 110%;
+}
+section#section_course .pic3:before {
+  background-image: url(http://c.blog.xuite.net/c/9/2/0/238447459/blog_3512109/txt/115160402/5.jpg);
+  background-size: auto 100%;
+}
+section#section_course .pic4:before {
+  background-image: url(http://jiupinorg.oss-cn-hangzhou.aliyuncs.com/ueditor/php/upload/image/20160315/1458032093266901.jpg);
+  background-size: auto 100%;
+}
+section#section_course p {
+  opacity: 0.4;
+  transition-duration: 0.5s;
+}
 
-### Support or Contact
+section#section_activity {
+  text-align: center;
+  background-color: #E49A2D;
+  padding: 20px;
+}
+section#section_activity .col-md-6 {
+  padding: 10px;
+}
+section#section_activity .icon-sea {
+  width: 100px;
+  margin: 30px;
+}
+section#section_activity .f {
+  border-right: solid 3px #eee;
+}
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+footer.jumbotron {
+  text-align: center;
+  background-image: url(https://www.printcolor.com.tw/wp-content/uploads/2009/02/e78e8be5beb7e582b3e79498e7949ce69aa2e5bfabe586b7e6b3a1e88cb6e585a7e9a081e789b9e5afab-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px;
+}
+footer.jumbotron input {
+  background-color: transparent;
+  max-width: 350px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer.jumbotron .container {
+  color: white;
+  padding: 60px 0px;
+}
+footer.jumbotron hr {
+  max-width: 60px;
+  border: solid 2px #E49A2D;
+}
+footer.jumbotron img {
+  height: 50px;
+  margin: 10px;
+}
+
+    </style>
+
+  
+  
+  
+  
+
+</head>
+
+<body translate="no" >
+
+  
+<nav class="navbar navbar-default navbar-fixed-top navbar-top">
+  <div class="container">
+    <div class="navbar-header"><a class="navbar-brand" href="#section_top"><img src="https://drive.google.com/uc?export=view&amp;id=0BwMYHt5UPmJ4M2R6U0VwbTJybnM" alt=""/>
+        <p>Splendid Service Sustainable</p></a></div>
+    <div class="navbar-collapse collapse">
+      <div class="nav navbar-nav navbar-right">
+        <li><a href="#section_intro">引言 INTRO</a></li>
+        <li><a href="#section_story">品牌理念 CONCEPT</a></li>
+        <li><a href="#section_course">目標 GOAL</a></li>
+        <li><a href="#section_activity">活動 ACTIVITY</a></li>
+        <li>       <a href="#section_contact">聯絡 CONTACT</a></li>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="jumbotron" id="section_top">
+  <div class="container">
+    <h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(100px)">三十而立，五十真好</h1>
+    <hr/>
+    <h4>人生下半場的開端，由30個人參與行動</h4>
+  </div>
+</header>
+<section id="section_intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><img class="icon-sea" src="http://freevector.co/wp-content/uploads/2010/06/37684-group-interface-symbol-200x200.png" alt=""/>
+        <h2 class="section-heading">你聽過第三人生嗎?</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="h2">定義</p>
+        <p class="content">第一人生是成長期，需要依賴父母跟外面的環境。提供需要的東西<br><br>第二人生是成家立業期，人們開始學著獨立，為了自己、為了理想而打拼<br><br>第三人生是個即將從職場退休，再投入社會的共生期，人們需要某種協助，但還有能力回饋社會。</p>
+      </div>
+      <div class="col-md-6">
+        <p class="h2">所以</p>
+        <p class="content">第三人生仍是個社會的齒輪，可以選擇帶動其他小齒輪<br><br>或與其他齒輪組成一個機動組，繼續在社會運轉。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_story">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">
+        <h1>品牌理念<br>CONCEPT</h1>
+        <hr/>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img src="http://www.moneyweekly.com.tw/Uploads/Images/BreakingNews/725da6a4-0f8c-4ed0-ac2e-b445668e62c1.jpg" alt=""/></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">第三人生的價值發揮</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">找到生命揮灑的出口。他們渴望社會參與，希望從中獲得自我發揮的空間，以實現自我滿足的需求</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img src="https://smmlab.jp/wp-content/uploads/2013/09/cocreation.jpg" alt=""/></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">青銀共創的舞台建立</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">滿足交流的需求。人們需要交流、分享、交換資訊，才能補足自己生命中的空缺，對年輕人來說如此，對後青春期族亦然。</p>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="img_wrap" data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1"><img src="https://farm3.staticflickr.com/2834/8785043006_1e2c61ed81_o.jpg" alt="" /></div>
+        <h3 data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">文化味道的記憶保存</h3>
+        <p data-bottom-top="transform: translateY(-50px);opacity: 0" data-center="transform: translateY(0px);opacity: 1">拼湊生命現場的碎片。透過故事的搜集與回憶的拼湊，使得更多人能參與這段歷史，與共同感受事件當下的時空背景，從而有新的體悟。</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_course">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 pic1">
+        <div class="text-panel">
+          <h1>共遊</h1>
+          <p>相伴有意義的旅行</p>
+        </div>
+      </div>
+      <div class="col-md-6 pic2">
+        <div class="text-panel">
+          <h1>共享</h1>
+          <p>共享生命的美好</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 pic3">
+        <div class="text-panel">
+          <h1>共創</h1>
+          <p>台南建城300年</p>
+        </div>
+      </div>
+      <div class="col-md-6 pic4">
+        <div class="text-panel">
+          <h1>共學</h1>
+          <p>與青年互動</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_activity">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 f"><img class="icon-sea" src="http://www.clker.com/cliparts/D/2/x/Q/R/P/running-icon-3-hi.png" alt=""/>
+        <h1 class="section-heading">行動<br>ACTION</h1>
+      </div>
+      <div class="col-md-6"><img class="icon-sea" src="http://developmentco.com/wp-content/uploads/2015/04/Assertive-Communication-and-Influencing-Skills.png" alt=""/>
+        <h1 class="section-heading">網路<br>NET</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <p class="h2">旅行</p>
+        <p class="content">拜訪各地社會企業，進行深度小旅行</p>
+      </div>
+      <div class="col-md-3 f">
+        <p class="h2">打工換宿</p>
+        <p class="content">以知識換取住宿的旅遊方式</p>
+      </div>
+      <div class="col-md-3">
+        <p class="h2">聚會</p>
+        <p class="content">1.一個月聚會一次<br>2.每半年輪流當講者(主題自訂)</p>
+      </div>
+      <div class="col-md-3">
+        <p class="h2">文章</p>
+        <p class="content">1.每個月書寫三篇文章<br>2.主題：台南、後青春期、第三人生</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section_contact"></section>
+<footer class="jumbotron" id="section_contact">
+  <div class="container">
+    <h1>了解更多我們的故事</h1>
+    <input class="form-control" placeholder="Email"/>
+    <hr/>
+    <button class="btn btn-default">訂閱</button>
+  </div><img class="btn" src="https://i.pinimg.com/originals/cb/38/25/cb382500ffd4f98b7855149ae6de0fd8.png"/><img class="btn" src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/439/aiga_mail-512.png"/>
+</footer>
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+
+  
+
+    <script >
+      $(window).scroll(function(evt){
+  if ($(window).scrollTop()>0)
+    $(".navbar").removeClass("navbar-top");
+  else
+      $(".navbar").addClass("navbar-top");
+});
+
+var s = skrollr.init();
+    </script>
+
+
+
+  
+  
+
+</body>
+
+</html>
+ 
